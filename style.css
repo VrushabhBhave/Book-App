@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f6f6f6;
+    transition: 0.8s ease-in-out;
+}
+
+header #navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid;
+    height: 10vh;
+    margin: 0 3rem;
+    padding: 0 3rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Logo  */
+header #navbar #logo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 6vw;
+}
+
+header #navbar #logo h1{
+    font-weight: 500;
+    margin-left: 0.2rem;
+    transition: 0.8s ease-in-out;
+}
+
+/* dark mode button  */
+header #sign-up{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+header #sign-up #mode{
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(#4f2ee8 0%, #dcdcdc 100%);
+    width: 40px;
+    height: 21px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+header #sign-up #mode #round-button{
+    position: absolute;
+    background-color: white;
+    width: 18px;
+    height: 18px;
+    border-radius: 50px;
+    top: 1px;
+    left: 3px;
+    transition: transform 300ms ease-in;
+}
+
+.circle-move{
+    transform: translateX(90%);
+}
+
+/* Sign-up button  */
+header #sign-up button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    width: 190px;
+    padding: 1rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    background-color: #4f2ee8;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+header #sign-up button:hover{
+    background-color: #eac645;
+    color: black;
+}
+
+header #sign-up button i{
+    font-size: 1rem;
+    color: #eac645;
+}
+
+header #sign-up button:hover i{
+    color: black;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* utility classes */
+.bg-black{
+    background-color: black;
+    transition: 0.8s ease-in-out;
+}
+
+.bg-white{
+    background-color: white;
+    transition: 0.8s ease-in-out;
+}
+
+.black{
+    color: black;
+}
+
+.white{
+    color: white;
+}
+
+/* main section  */
+#aside{
+    display: flex;
+    border: solid red;
+    margin: 0 3rem;
+    padding: 3rem 3rem;
+}
+#left{
+    width: 30%;
+}
+#right{
+    width: 70%;
+    border: solid blue;
+}
+
+#categories{
+    height: 50%;
+    overflow: auto;
+    overflow-x: hidden;
+    padding: 0 1rem;
+}
+#support-container{
+    height: 50%;
+    border: solid green;
+}
+
+/* ::-webkit-scrollbar-button {
+    display: none;
+} */
+::-webkit-scrollbar {
+    width: 8px;  /* Adjust as needed */
+}
+
+::-webkit-scrollbar-button {
+    display: none;  /*May not work in some browsers*/
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e0e0e0; /* Style the scrollbar */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(161, 161, 161); /* Style the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.category-item{
+    font-size: 1.2rem;
+    list-style: none;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    transform-origin: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.category-item:hover{
+    transform: scale(1.1);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #4f2ee8;
+}
