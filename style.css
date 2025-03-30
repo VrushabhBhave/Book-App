@@ -125,6 +125,10 @@ header #sign-up button:hover i{
     padding: 3rem 0rem;
 }
 #left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 30%;
     height: 100%;
 }
@@ -138,10 +142,6 @@ header #sign-up button:hover i{
     overflow: auto;
     overflow-x: hidden;
     padding: 0 2rem;
-}
-#support-container{
-    height: 50vh;
-    border: solid green;
 }
 
 /* ::-webkit-scrollbar-button {
@@ -252,4 +252,14 @@ header #sign-up button:hover i{
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 95%;
+}
+
+/* Support container  */
+#support-container{
+    color: white;
+    margin-top: 5rem;
+    height: 60vh;
+    width: 22vw;
+    background: radial-gradient(183.6% 183.01% at 59.76% -23.42%, #4f2ee8 18.03%, #fff 100%);
+    border-radius: 30px;
 }
